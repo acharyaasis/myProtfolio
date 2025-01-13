@@ -1,0 +1,309 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+  }
+  
+  .bg-light {
+    background-color: #d3d3d3 !important;
+    color: #000;
+  }
+  
+  .nav-link {
+    color: black !important;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #888 !important;
+  }
+  
+  .nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover:after {
+    width: 100%;
+  }
+  
+  .btn-outline-light {
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .rounded-square {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .rounded-square:hover {
+    background-color: #444;
+    color: white;
+  }
+  
+  /* Fixed Header Styles */
+  header {
+    z-index: 1000; /* Ensure header stays on top */
+  }
+  
+  .container-fluid {
+    padding-top: 80px; /* Create space for the fixed header */
+  }
+  
+  /* Split Header Background: Left (White) and Right (Black) */
+  .header-left {
+    background-color: #d3d3d3; /* Light background for left section */
+  }
+  
+  .header-right {
+    background-color: #000; /* Dark background for right section */
+  }
+  
+  /* Responsive Text Alignment */
+  @media (max-width: 992px) {
+    .text-lg-start {
+      text-align: center !important;
+    }
+  
+    .justify-content-lg-start {
+      justify-content: center !important;
+    }
+  }
+  
+  /* Adjustments for Small Screens */
+  @media (max-width: 768px) {
+    .fs-4 {
+      font-size: 1.2rem;
+    }
+  
+    .display-4 {
+      font-size: 2rem;
+    }
+  
+    .fs-6 {
+      font-size: 0.9rem;
+    }
+  
+    .rounded-square {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Extra Small Screens */
+  @media (max-width: 576px) {
+    header {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .btn-outline-light {
+      margin-top: 10px;
+    }
+  
+    .px-md-5 {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+  }
+
+/* 
+
+  About Me page  */
+  body {
+    background: linear-gradient(to right, #ffffff);
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#about-section {
+    padding: 80px 0;
+}
+
+#about-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+#about-text {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: #555;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    position: relative;
+    max-width: 200px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: white;
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
+
+.divider span {
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+.service-card {
+    margin: 30px 0;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.2), -8px -8px 30px rgba(255, 255, 255, 0.9);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #3a3b3c;
+    transition: color 0.3s;
+}
+
+.service-card:hover .service-icon {
+    color: #28a745;
+}
+
+.service-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #333;
+}
+
+.service-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+#explore {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5);
+  transition: all 0.4s ease;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#explore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 100%;
+  background: rgba(242, 240, 240, 0.866);
+  transform: skewX(-45deg);
+  transition: 0.4s;
+}
+
+#explore:hover::before {
+  left: 100%;
+}
+
+#explore:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.7);
+}
+
+#explore:hover {
+  background: linear-gradient(45deg, #0056b3, #003f7f);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about-title {
+        font-size: 2.5rem;
+    }
+
+    .service-title {
+        font-size: 1.5rem;
+    }
+
+    .service-text {
+        font-size: 0.95rem;
+    }
+
+    .divider {
+        max-width: 150px;
+    }
+}
